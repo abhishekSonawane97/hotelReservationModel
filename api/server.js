@@ -12,7 +12,7 @@ import vaccinationRoute from './routes/vaccinations.route.js'
 dotenv.config(); 
 
 
-mongoose.connect(process.env.MONGO).then(()=> console.log('Mongo DB is connected')).catch(err => console.log(err))
+mongoose.connect('mongodb+srv://hotelbook2024:83nGG5jejvPQtOni@cluster0.pszfrye.mongodb.net/hotelBook?retryWrites=true&w=majority&appName=Cluster0').then(()=> console.log('Mongo DB is connected')).catch(err => console.log(err))
 
 const app = express();
 app.use(express.json());
